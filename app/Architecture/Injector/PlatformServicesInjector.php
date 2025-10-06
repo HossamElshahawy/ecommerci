@@ -14,7 +14,6 @@ class PlatformServicesInjector extends ServiceProvider
     {
         if (request()->is('api/*/website/*'))
             return $webService;
-        dd('her');
         return $mobileService;
     }
 
